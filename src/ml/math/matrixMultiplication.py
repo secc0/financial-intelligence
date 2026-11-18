@@ -14,29 +14,3 @@ def matrixMultiplication(a, b):
 
         resultMatrix.append(resultMatrixj)
     return resultMatrix        
-
-
-
-    
-a = [
-    [2, 3, 4],
-    [5, 6, 7],
-    [2, 3, 4],
-    [5, 6, 7],
-    [2, 3, 4],
-    [5, 6, 7],
-    [2, 3, 4],
-    [5, 6, 7],
-    [2, 3, 4],
-    [5, 6, 7],
-    [2, 3, 4],
-    [5, 6, 7]
-]
-
-b = [
-    [1, 2,3,5,6,7,4,5,7,8,5,3],
-    [1, 2,3,5,6,7,4,5,7,8,5,3],
-    [1, 2,3,5,6,7,4,5,7,8,5,3]
-]
-
-print(matrixMultiplication(a, b))

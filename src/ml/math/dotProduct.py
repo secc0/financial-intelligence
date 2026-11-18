@@ -7,8 +7,3 @@ def dotProduct(x, w):
     for i in range(len(x)):
         result += float(x[i] * w[i])
     return result
-
-x = [2, 3, 4]
-w = [0.5, 0.2, 0.1]
-
-print(dotProduct(x, w))

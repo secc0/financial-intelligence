@@ -6,12 +6,3 @@ def matrixTrasnspose(a):
             matrixj.append(a[j][i])
         matrixT.append(matrixj)
     return matrixT
-
-a = [
-    [2, 3, 4],
-    [5, 6, 7],
-    [2, 3, 4],
-]
-
-
-print(matrixTrasnspose(a))
