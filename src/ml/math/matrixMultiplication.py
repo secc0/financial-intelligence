@@ -6,11 +6,8 @@ def matrixMultiplication(a, b):
         resultMatrixj = []  
         for j in range(len(b[0])):
             resultj = 0
-              
             for k in range(len(b)):
                 resultj += a[i][k] * b[k][j]
-
             resultMatrixj.append(resultj)
-
         resultMatrix.append(resultMatrixj)
     return resultMatrix        

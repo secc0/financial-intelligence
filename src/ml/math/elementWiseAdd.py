@@ -9,9 +9,6 @@ def elementWiseMultiply(a, b):
         product.append(vector)
     return product
 
-
-
-
 def elementWiseAdd(a, b):
     if len(a) != len(b) or len(a[0]) != len(b[0]):
         raise ValueError("as matrizes precisam ter o mesmo tamanho de vetor e quantidade de valores nos vetores")
