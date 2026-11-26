@@ -9,8 +9,8 @@ def main():
     expected = [5.0]
 
     prediction = forward(inputs, weights, biases)
-    print("predicition",prediction)
     loss = lossFunc(expected, prediction)
-    grad = gradient(inputs, weights, biases, expected, prediction)
+    grad = gradient(inputs, weights, biases, expected, loss)
+    print(grad)
 if __name__ == "__main__":
     main()
