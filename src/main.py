@@ -13,7 +13,13 @@ def main():
     loss = lossFunc(expected, prediction)
     grad = gradient(inputs, weights, biases, expected, loss)
     newW = updateWeights(weights, grad, 0.01)
+    newPrediction = forward(inputs, newW, biases)
+    newloss = lossFunc(expected, newPrediction)
+    newgrad = gradient(inputs, newW, biases, expected, newloss)
+    print(grad)
+    print(newgrad)
     print(weights)
     print(newW)
+    
 if __name__ == "__main__":
     main()
